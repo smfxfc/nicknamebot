@@ -1,2 +1,2 @@
 # nicknamebot
-"""Updated to store data using SQL rather than a JSON file."""
+Updated to store data using SQL rather than a JSON file.
