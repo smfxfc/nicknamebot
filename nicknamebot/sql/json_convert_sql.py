@@ -20,15 +20,15 @@ con = sql_connect.db_connect()
 cur = con.cursor()
 
 # create table with 3 columns: username, nickname, and time added to db
-create_tbl = """
-CREATE TABLE user_nicknames (
-    username text PRIMARY KEY,
-    nickname text,
-    time text
-    )"""
+# create_tbl = """
+# CREATE TABLE user_nicknames (
+#     username text PRIMARY KEY,
+#     nickname text,
+#     time text
+#     )"""
 
-cur.execute(create_tbl)
-con.commit()
+# cur.execute(create_tbl)
+# con.commit()
 
 
 # when adding new users to datebase, time_now will be the time the user received a nickname. All usernames

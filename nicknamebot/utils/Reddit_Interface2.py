@@ -1,8 +1,8 @@
 #! python3
 
 import praw
-import config
 
+from credentials import config
 import sql.sql_connect
 import sql.sql_funcs as sql_funcs
 

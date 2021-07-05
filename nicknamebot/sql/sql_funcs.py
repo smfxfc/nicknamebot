@@ -9,8 +9,6 @@ import sql.sql_connect as sql_connect
 con = sql_connect.db_connect()
 cur = con.cursor()
 
-# qry_tbl = ("SELECT EXISTS(SELECT 1 FROM user_nicknames WHERE username)
-
 def pull_db():
     cur.execute("SELECT * FROM user_nicknames ORDER BY time")
     qry_output = cur.fetchall()
@@ -49,5 +47,3 @@ def insert_nickname(username, nickname):
         'UPDATE user_nicknames SET nickname=?,time=? WHERE username=?',
         (nickname,now_time,username))
     con.commit()
-
-
